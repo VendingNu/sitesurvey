@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+        .hidden {
+            display: none;
+        }
+        .container {
+            margin: 0 auto;
+            width: 50%;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .site-details {
+            display: inline-block;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        .site-details label {
+            float: left;
+            width: 30%;
+            text-align: left;
+            margin-right: 10px;
+        }
+        .site-details input {
+            float: right;
+            width: 60%;
+        }
+}
+</style>
+</head>
+<body>
+<div class="form-group">
+    <DOCTYPE html>
+  <html lang="en">
+    <meta charset="UTF-8">
+    <title>Site Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Show/Hide Fields</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    
+<h1 id="title">Site Survey</h1>
+  <p id="description"> Please complete the below
+  </p>
+  <div class="site-details">
+  <form id="survey-form">
+    <label id="name-label"><Strong>Site Name:</strong></label>
+      <input 
+        id="name" 
+        type="text"
+        placeholder="Enter site name" 
+        required
+      />
+    <label id="name-label"><Strong>Site Address:</strong></label>
+      <input 
+        id="address" 
+        type="text"
+        placeholder="Enter site address" 
+        required
+      />
+      <label id="name-label"><Strong>Site Contact Name:</strong></label>
+      <input 
+        id="address" 
+        type="text"
+        placeholder="Enter site address" 
+        required
+      />
+      <label id="name-label"><Strong>Contact Number:</strong></label>
+      <input 
+        id="address" 
+        type="text"
+        placeholder="Enter site address" 
+        required
+      />
+    <label id="email-label"><strong>Email Address:</strong><label>
+      <input 
+        id="email" 
+        type="email"
+        placeholder="Enter email address"  
+        required
+      />
+      
+    <label for="options">Choose an option:</label>
+    <select id="options" onchange="toggleFields()">
+        <option value="" disabled selected>Select an option</option>
+        <option value="option1">Coffee Machine</option>
+        <option value="option2">Vending Machine</option>
+        <option value="option3">Water Tap</option>
+        <option value="option4">Water Cooler</option>
+    </select>
+    </div>
+    <div id="option1Fields" class="hidden">
+    <label for="options">Manufacturer:</label>
+    <select id="options" onchange="toggleFields()">
+        <option value="option1">Cimbali</option>
+        <option value="option2">Coffetek</option>
+        <option value="option3">WMF</option>
+    </select>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required><br>
+        
+        <label for="height">Height (mm):</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Width (mm):</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Depth (mm):</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Weight (kg):</label>
+        <input type="text" id="height" name="height"><br>
+        
+    <label for="options">Location: Floor Level:</label>
+    <select id="options" onchange="toggleFields()">
+        <option value="" disabled selected>Select an option</option>
+        <option value="option1">Ground Floor</option>
+        <option value="option2">1st Floor</option>
+        <option value="option3">2nd Floor</option>
+        <option value="option4">3rd Floor</option>
+        <option value="option4">4th Floor</option>
+        <option value="option4">5th Floor</option>
+        <option value="option4">6th Floor</option>
+        <option value="option4">7th Floor</option>
+        <option value="option4">8th Floor</option>
+        <option value="option4">9th Floor</option>
+        <option value="option4">10th Floor</option>
+        <option value="option4">Other</option>
+    </select>
+        
+        <label for="height">Other:</label>
+        <input type="text" id="Other" name="Other"><br>
+
+        <label for="height">Location: Area</label>
+        <input type="text" id="area" name="area"><br>
+    
+         <p><strong>Additional Information for Installation</strong></p>
+        <label>Is there steps to the final / access to building or location?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>Is there a 13amp electrical socket within 1.5 m of machine?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>Distance to power if not within spec?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>Is there LAN / WIFI connection?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>Does the worktop need drilling?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>Is the counter / shelf wide enough for equipment?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>Is there enough room above M/C for top filling bean hopper?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>Is the surface suitable for the weight of machine being installed?    </label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>If a freestanding machine is to be installed is there enough room in the customers desired for the machine?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+        <label>If a freestanding machine, is the floor suitable to support the weight of the machine?   </label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+         
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+         
+<p>Is the site ready for install?<p>
+      <textarea style="width: 500px; height: 300px;" id="comments" placeholder="Please provide lots of details including size of holes to be cut, and water/waste and power locations, and what is needed to be done by the customer"></textarea>
+    </div>
+    
+    <div id="option2Fields" class="hidden">
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model"><br>
+        
+        <label for="height">Height (mm):</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Width (mm):</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Depth (mm):</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Weight (kg):</label>
+        <input type="text" id="height" name="height"><br>
+         <p><strong>Additional Information for Installation</strong></p>
+        <label>Is there steps to the final / access to building or location?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>Is there a 13amp electrical socket within 1.5 m of machine?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>Distance to power if not within spec?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>Is there LAN / WIFI connection?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>Does the worktop need drilling?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>Is the counter / shelf wide enough for equipment?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>Is there enough room above M/C for top filling bean hopper?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>Is the surface suitable for the weight of machine being installed?    </label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>If a freestanding machine is to be installed is there enough room in the customers desired for the machine?</label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+        <label>If a freestanding machine, is the floor suitable to support the weight of the machine?   </label>
+          <input
+            name="Install"
+            value="Yes"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Yes</strong>
+          <input
+            name="Install"
+            value="No"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>No</strong>
+<p>Is the site ready for install?<p>
+      <textarea id="comments" placeholder="Please provide lots of details including size of holes to be cut, and water/waste and power locations, and what is needed to be done by the customer"></textarea>
+    </div>
+    
+    <div id="option3Fields" class="hidden">
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model"><br>
+        
+    <p><strong>Additional Information for Installation</strong></p>
+        <label>Tap features (please tick all that apply)</label>
+          <input
+            name="Feature"
+            value="Hot"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Hot</strong>
+          <input
+            name="Feature"
+            value="Cold"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Cold</strong>
+          <input
+            name="Feature"
+            value="Sparkling"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Sparkling</strong>
+          <input
+            name="Feature"
+            value="Ambient"
+            type="checkbox"
+            class="input-checkbox"
+         /><strong>Ambient</strong>
+
+        <label for="height">:</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Width (mm):</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Depth (mm):</label>
+        <input type="text" id="height" name="height"><br>
+        
+        <label for="height">Weight (kg):</label>
+        <input type="text" id="height" name="height"><br>
+    </div>
+    
+    <div id="option4Fields" class="hidden">
+        <label for="fieldE">Field E:</label>
+        <input type="text" id="fieldE" name="fieldE"><br>
+        
+        <label for="fieldF">Field F:</label>
+        <input type="text" id="fieldF" name="fieldF"><br>
+    </div>
+
+    <script>
+        function toggleFields() {
+            var option = document.getElementById("options").value;
+            var option1Fields = document.getElementById("option1Fields");
+            var option2Fields = document.getElementById("option2Fields");
+            var option3Fields = document.getElementById("option3Fields");
+            var option4Fields = document.getElementById("option4Fields");
+            
+            option1Fields.classList.add("hidden");
+            option2Fields.classList.add("hidden");
+            option3Fields.classList.add("hidden");
+            option4Fields.classList.add("hidden");
+            
+            if (option === "option1") {
+                option1Fields.classList.remove("hidden");
+            } else if (option === "option2") {
+                option2Fields.classList.remove("hidden");
+            } else if (option === "option3") {
+                option3Fields.classList.remove("hidden");
+            } else if (option === "option4") {
+                option4Fields.classList.remove("hidden");
+            }
+        }
+    </script>
+
+  <p><strong>Additional Information for Installation</strong></p>
+      <label>
+        <input
+          name="Decision"
+          value="Definitely"
+          type="radio"
+          class="inline"
+        /><strong>Definitely</strong>
+        </label>
+        <label>
+          <input
+            name="Decision"
+            value="Most-Definitely"
+            type="radio"
+            class="inline"
+          /><strong>Most Definitely</strong>
+        </label>
+        <label>
+          <input
+            name="Decision"
+            value="Absolutely"
+            type="radio"
+            class="inline"
+            checked
+          /><strong>Abso-freaking-lutely</strong>
+        </label>
+</body>
+</html>
